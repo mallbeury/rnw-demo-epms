@@ -10,6 +10,7 @@ This application supports the [Getting Started on Heroku with Node.js](https://d
 RNW_API_ENDPOINT = '<GIVEN_DURING_ONBOARDING>'
 RNW_CLIENT_ID = '<GIVEN_DURING_ONBOARDING>'
 RNW_CLIENT_SECRET = '<GIVEN_DURING_ONBOARDING>'
+RNW_ORG_ID = '<GIVEN_DURING_ONBOARDING>'
 ```
 ## Running Locally
 
