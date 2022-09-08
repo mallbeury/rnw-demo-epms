@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <%- include ("../partials/header.ejs") %>
+</head>
+
+<body>
+<div class="jumbotron text-center">
+  <div class="container">
+    <a href="/" class="lang-logo">
+      <img src="/lang-logo.png">
+    </a>
+    <h1>RaiseNow Demo</h1>
+    <p>This is a sample Node application deployed to Heroku.</p>
+  </div>
+</div>
+
+<div class="container">
+  <div class="rnw-widget-container"></div>
+  <script src="https://tamaro.raisenow.com/epms-demo/card-sepa_dd_stripe/widget.js"></script>
+  <script>
+    window.rnw.tamaro.runWidget('.rnw-widget-container', {
+      testMode: true,
+      debug: true,
+      "showFields": {
+        "stored_customer_salutation": false,
+        "stored_customer_birthdate": false,
+        "stored_customer_email": true,
+        "stored_customer_email_permission": false,
+        "stored_customer_message": false,
+        "stored_customer_donation_receipt": false,
+        "stored_customer_street2": false
+      },
+    }).then(function(api){
+      api.computedConfig.paymentWidgetBlocks.push('payment_cover_fee');
+      console.log(api);
+    });
+  </script>
+</div>
+</body>
+</html>

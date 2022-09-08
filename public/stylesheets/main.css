@@ -1,0 +1,47 @@
+html {
+  font-size: 14px;
+}
+.jumbotron {
+  background: #532F8C;
+  color: white;
+  padding-bottom: 80px; }
+  .jumbotron .btn-primary {
+    background: #845ac7;
+    border-color: #845ac7; }
+    .jumbotron .btn-primary:hover {
+      background: #7646c1; }
+  .jumbotron p {
+    color: #d9ccee;
+    max-width: 75%;
+    margin: 1em auto 2em; }
+  .navbar + .jumbotron {
+    margin-top: -20px; }
+  .jumbotron .lang-logo {
+    display: block;
+    background: #B01302;
+    border-radius: 50%;
+    overflow: hidden;
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    border: 2px solid white; }
+    .jumbotron .lang-logo img {
+      max-width: 100%; }
+
+.container {
+  width: 50%;
+}
+
+:root {
+  --tamaro-block-header-position-bg-color: #532F8C;
+  --tamaro-button-primary-bg-color: #532F8C;
+}
+
+#tamaro-widget.tamaro-widget .purposes label:after {
+  display: block;
+  content: "";
+  width: 128px;
+  height: 128px;
+  background: transparent url('https://cdn6.nzgeo.com/2015/08/Goat-1300x1300.jpg') no-repeat;
+  background-size: 128px;
+}
