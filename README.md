@@ -4,6 +4,13 @@ A barebones Node.js app using [Express 4](http://expressjs.com/).
 
 This application supports the [Getting Started on Heroku with Node.js](https://devcenter.heroku.com/articles/getting-started-with-nodejs) article - check it out.
 
+## Setup your .env
+
+```sh
+RNW_API_ENDPOINT = '<GIVEN_DURING_ONBOARDING>'
+RNW_CLIENT_ID = '<GIVEN_DURING_ONBOARDING>'
+RNW_CLIENT_SECRET = '<GIVEN_DURING_ONBOARDING>'
+```
 ## Running Locally
 
 Make sure you have [Node.js](http://nodejs.org/) and the [Heroku CLI](https://cli.heroku.com/) installed.
